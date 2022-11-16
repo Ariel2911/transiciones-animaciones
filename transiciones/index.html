@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Trancisiones</title>
+</head>
+<body>
+
+  <h1>Transiciones</h1>
+  <p>Necesitan un diasparador</p>
+  <h2>Proceso de renderizado:</h2>
+  <h3>Capas</h3>
+  <p>js/ css  –  layout – paint  –  composite</p>
+  <br/>
+  <ul>
+    <li>layout: es el mśs costoso. Se encarga de establecer todos las propiedades del modelo de caja. Si se modifica una propiedad del layout se modificara toda la geometría de la página.</li>
+    <br/>
+    <li>Paint: es la capa que aplica la “pintura” de las etiquetas de html, colores, imagenes, etc.</li>
+    <br/>
+    <li>composite: se encarga de darle el orden a las capas del navegador. Hace referencia a los elementos que no necesitan layout o paint. Uno de las propiedades que ocupa es transform ya que da el orden a las capas del navegador y comprime y dibuja en la pantalla</li>
+
+  </ul>
+  <br/>
+  <p>cuando se modifican las propiedades del layout se vuelve a renderizar todo la página</p>
+
+  <div class="element" ></div>
+
+  <div class="container">
+    <div class="element2" ></div>
+  </div>
+
+  <div class="container3">
+    <div class="element3" ></div>
+  </div>
+
+  <h2>transition-property</h2>
+  <p>no se recomiendadn: </p>
+  <ul>
+    <li>all: consume muchos recursos</li>
+    <li>Los shorthand como background tambien consumen muchhos recursos</li>
+  </ul>
+  <h2>transition-timing-function</h2>
+  <ul>
+    <li>ease: acelera y desacelera</li>
+    <li>ease-in: acelera</li>
+    <li>ease-out: desacelera</li>
+    <li>ease-in-out:</li>
+    <li>linear: aceleracion lineal</li>
+    <li>step(5, end): aceleracion lineal</li>
+    <li>cubic-bezier(): personaliza la curva de aceleracion (https://cubic-bezier.com)</li>
+  </ul>
+  
+</body>
+</html>

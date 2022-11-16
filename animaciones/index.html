@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Animaciones</title>
+</head>
+<body>
+  <h1>Animaciones</h1>
+
+  <p>No necesitan un diasparador y nos permite animar distindos estilos a la vez y podemos controlar el flujo de la anoimación</p>
+  <p> animation en un shorthand</p>
+
+  <ul>
+
+    <li>
+      <h2>animation-name</h2>
+      
+      <p>Especifica una lista de animaciones que se deben aplicar al elemento seleccionado. Este valor es obligatorio al llamar una animación</p>
+    </li>
+
+    <li>
+      <h2>animation-duration</h2>
+
+      <p>Indica la cantidad de tiempo que la animación tarda en completar un ciclo. Este valor es obligatorio al llamar una animación</p>
+    </li>
+
+    <li>
+      <h2>animation-timing-funtion</h2>
+
+      <p>Especifica cómo una animación CSS debe avanzar sobre la duración de cada ciclo. Valores: <span> ease, ease-in, ease-out, ease-in-out, linear, step-start, step-end, cubic-bezier(), cubic-bezier(0.1, 0.7, 1.0, 0.1),</span></p>
+    </li>
+
+    <li>      
+      <h2>animation-delay</h2>
+
+      <p>especifica el tiempo de retardo que debe transcurrir antes de comenzar la animación.</p>
+    </li>
+
+    <li>
+      <h2>animation-iteration-count</h2>
+      
+      <p>Define el numero de veces que un ciclo de animación debe ser ejecutado antes de detenerse. Acepta valores numericos y decimales. Para que la animación se repita indefinidamente le debemos dar el valor: infinite</p>      
+    </li>
+
+    <li>
+      <h2>animation-direction</h2>
+       
+      <p>Indica si la animación debe retroceder hasta el fotograma de inicio al finalizar la secuencia o si debe comenzar desde el principio al llegar al final. Por defecto su valor es normal que lo muestra del 0% al 100%. El valor reverse la ejecuta de 100% al 0%. El valor alternate oscila entre normal y reverse</p>
+    </li>
+
+    <li>
+      <h2>animation-fill-mode</h2>
+      
+      <p>Especifica el modo en que una animación CSS aplica sus estilos, estableciendo su persistencia y estado final tras su ejecución. Por defecto es none. <span>forwards</span> deja congelada la animación en el último keyframe. <span>backwards</span>, luego de terminar, deja congelada la animación en el primer keyframe. <span>both</span> es la mescla de forwards y backwards </p>
+    </li>
+
+    <li>
+      <h2>animation-play-state</h2>
+      
+      <p>Determina si una animación está en ejecución o en pausa. Puede ser consultada para determinar si la animación se está ejecutando. Además, su valor se puede establecer para pausar y reanudar una animación. Por defecto es running(play). El otro posible valor es paused</p>
+    </li>
+
+    <li>
+      <h2>animation-timeline</h2>
+      
+      <p>La propiedad especifica la línea de tiempo que se utiliza para controlar el progreso de una animación.</p>
+    </li>
+    
+  </ul>
+
+  <h2>imagenes</h2>
+
+  <div class="texts">
+    <img src="star.svg" class="img saltar" />
+    <img src="star.svg" class="img girar" />
+    <img src="star.svg" class="img efecto1" />
+  </div>
+
+  <h2>Textos</h2>
+  <div class="texts">
+    <p class="text"> ¡Hola! </p>
+  </div>
+
+  <div class="texts">
+    <h2 class="titulo">Titulo</h2>
+    <p class="text0"> ¡Hola! </p>
+  </div>
+ 
+</body>
+</html>

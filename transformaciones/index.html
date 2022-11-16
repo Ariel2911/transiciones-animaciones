@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Transfornaciones</title>
+</head>
+<body>
+
+  <h1>Transfornaciones</h1>
+
+  <p>shorthand: transform: "x" "Y";</p>
+
+  <h2>transform: translateX(150px);</h2>
+
+  <div class="container">
+    <div class="element" ></div>
+  </div>
+
+  <hr/>
+
+  <h2>transform: translateY(150px);</h2>
+
+  <div class="container1">
+    <div class="element1" ></div>
+  </div>
+
+  <hr/>
+
+  <h2>transform: translatex(100%);</h2>
+  <p>Con un transform diferente a none se genera un contexto de apilamiento</p>
+  <div class="container2">
+    <div class="element2" ></div>
+    <h1>Hola mundo</h1>
+  </div>
+
+  <h2>transform: translatex(100%); z-index: -1;</h2>
+  <div class="container3">
+    <div class="element3" ></div>
+    <h1>Hola mundo</h1>
+  </div>
+
+  <hr/>
+
+  <h2>transform: rotate();</h2>
+
+  <p>Los valores que acepta son:</p>
+
+  <ul>
+    <li>deg: 0 - 360</li>
+    <li>grad: 0 - 400</li>
+    <li>rad: 0 - 6.28319</li>
+    <li>0 - 1 turn</li>
+  </ul>
+
+  <div class="container4">
+    <div class="element4" ></div>
+    <h1>Hola mundo</h1>
+  </div>
+
+  <h2>transform-origin</h2>
+
+  <p>Por defecto la propiedad transform-origin tiene el valor 50% 50%;</p>
+  <p>Alterando el valor de esta propiedad podemos alterar el punto de origen que va a tomar la transición </p>
+  <p>Ejemplo: transform-origin: top left;</p>
+
+  <div class="container5">
+    <div class="element5" ></div>
+  </div>
+
+  <h2>transform: scale()</h2>
+  <p>shorthand: transform: scale("x", "Y");</p>
+
+  <div class="container6">
+    <div class="element6"></div>
+  </div>
+
+  <p>Aplicando transform-origin: top left;</p>
+  <div class="container7">
+    <div class="element7"></div>
+  </div>
+
+  <hr/>
+
+  <h2>transform: skew()</h2>
+  <p>Permite deformar el elemento y al igual que rotate solo acepta valores angulares (deg, grad, rad, turn)</p>
+  <p>shorthand: transform: skews("x", "Y");</p>
+  <p>La MDN no recomienda utilizar este shorthand porque ya no es soportado por todos los navegadores. Para utilizar dicha transformación deberiamos utilizar transform: skewsX() y transform: skewsY()</p>
+
+  <div class="container8">
+    <div class="element8"></div>
+  </div>
+
+  <h2>transform: skewY(50deg);</h2>
+
+  <div class="container9">
+    <div class="element9"></div>
+  </div>
+
+  <hr/>
+
+  <h2>Aplicardos propiedades con transform</h2>
+  <p>Transform ejecutara las propiedades de izquierda a derecha una a la vez</p>
+  <p>Por ello el orden de las propiedades variara el resultado final</p>
+  <p>transform: rotate(90deg) translate(100px) scale(.3);</p>
+
+  <div class="container10">
+    <div class="element10"></div>
+  </div>
+
+  <p>transform: scale(.3) rotate(90deg) translate(100px);</p>
+  <div class="container11">
+    <div class="element11"></div>
+  </div>
+  
+  <hr/>
+
+  <h2>will-change</h2>
+  <p>Nos permite decirle a los navegadores que propiedades van a cambiar antes de que susedan. Se utiliza para optimozar recursos pero no se recomienda usarlo mucho, esta destinado a utilizarlo como último recurso con el fin de tratar los problemas de rendimiento existentes, no debe usarse de forma preventiva.</p>
+  <p>No debe abusarse de las animasiones y transiciones ya que dificultan la accecibilidad al usuario.</p>
+  <p>Si debes utilizar las propiedades de la capa layout es recomendable utilizar will-change. Ejemplo: will-change: width, heigth;</p>
+  <p>Esto hara que el navegador obtimise dichas propiedades</p>
+
+</body>
+</html>
